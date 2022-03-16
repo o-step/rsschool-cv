@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Space+Mono&display=swap');
 
+html {
+    height: 100%;
+}
 body {
-    background-color: #d4c1c1;
+    background-color: #e6dad6;
+    min-height: 100%;
+    margin: 0;
 }
 .left { 
     float: left;
     position: absolute; 
     left: 6%; 
     top: 10%; 
+    padding-bottom: 5%;
     width: 60%; 
 }
 .right { 
@@ -15,7 +21,9 @@ body {
     position: absolute; 
     right: 0; 
     top: 10%; 
+    bottom: 10%;
     width: 40%; 
+    padding-bottom: 5%;
 } 
 .name {
     font-family: 'Nanum Myeongjo', sans-serif;
@@ -23,7 +31,10 @@ body {
     font-weight: 700;
 }
 section img {
-    width: 60%;
+    width: 70%;
+    -webkit-box-shadow: -1px 5px 27px 7px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -1px 5px 27px 7px rgba(34, 60, 80, 0.2);
+    box-shadow: -1px 5px 27px 7px rgba(34, 60, 80, 0.2);
 }
 .hr-shadow {
 	margin: 15px 0 5px;
@@ -57,16 +68,29 @@ section ul li {
     font-family: 'Nanum Myeongjo', sans-serif; 
 }
 .code-style {
+    display: inline;
     font-family: 'Space Mono';
     font-weight: 100;
     font-size: 1rem;
-    margin-bottom: 3rem;
+}
+.code_background {
+    display: inline-block;
+    background-color: #f1e6e3;
 }
 .contacts {
     list-style-type: none;
     padding-left: 0;
 }
+.icon {
+    width: 2vw;
+    fill:rgb(104, 99, 99);
+    padding-right: 1rem;
+}
 .contacts li a {
     text-decoration: none;
 }
+.contacts li a:hover {
+    color: #4b6b8d;
+}
+
 
