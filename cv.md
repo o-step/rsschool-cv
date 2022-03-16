@@ -12,3 +12,15 @@
  * Saint-Petersburg State Institute of Technology, chemical engineer 
  * Cources: 
      + ITMO UNIVERSITY, Web development
+
+## Skills
+
+* HTML/CSS/SASS
+* JavaScript Basics
+* PHP Basics
+* Bootsrap 5
+* PixelPerfect
+* OS: **Linux(Ubuntu 20.04)** / Windows 10
+* Editors: VSCode
+
+---
