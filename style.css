@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Space+Mono&display=swap');
 
 body {
     background-color: #d4c1c1;
@@ -47,6 +47,13 @@ section ul li {
     padding-bottom: .8rem;
 } 
 .basic-style {
+    margin-top: 2rem;
     font-size: 1.3rem;
     font-family: 'Nanum Myeongjo', sans-serif; 
+}
+.code-style {
+    font-family: 'Space Mono';
+    font-weight: 100;
+    font-size: 1rem;
+    margin-bottom: 3rem;
 }

@@ -27,8 +27,22 @@
         </section>
         <section class="basic-style">
             <h1 class="general__title">Education</h1>
+            <ul type="circle">
+                <li>Saint-Petersburg State Institute of Technology, chemical engineer</li>
+                <li>ITMO UNIVERSITY, Web development</li>
+            </ul>
         </section>
-        <section>Code Example</section>
+        <section class="basic-style">
+            <h1 class="general__title">Code Example</h1>
+            <code class="code-style">
+                function nicknameGenerator(name){<br>
+                    &nbsp;&nbsp;&nbsp;return (name.length < 4) ? "Error: Name too short" :<br>
+                    &nbsp;&nbsp;&nbsp;[...'aeiou'].map((item, i, arr) => {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return (arr.includes(name[2])) ? name.slice(0, 4) : name.slice(0, 3)<br>
+                    &nbsp;&nbsp;&nbsp;})[0];<br>
+                }<br>
+            </code>
+        </section>
         <section>Languages</section>
     </div>
     <div class="right">
