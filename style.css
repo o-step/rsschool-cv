@@ -4,25 +4,30 @@ body {
     background-color: #d4c1c1;
 }
 .left { 
+    float: left;
     position: absolute; 
     left: 6%; 
     top: 10%; 
-    width: 65%; 
+    width: 60%; 
 }
 .right { 
+    float: right;
     position: absolute; 
     right: 0; 
     top: 10%; 
-    width: 35%; 
+    width: 40%; 
 } 
 .name {
     font-family: 'Nanum Myeongjo', sans-serif;
-    font-size: 5rem;
+    font-size: 6vw;
     font-weight: 700;
+}
+section img {
+    width: 60%;
 }
 .hr-shadow {
 	margin: 15px 0 5px;
-    width: 65%;
+    width: 50%;
 	padding: 0;
 	height: 10px;
 	border: none;
@@ -57,3 +62,11 @@ section ul li {
     font-size: 1rem;
     margin-bottom: 3rem;
 }
+.contacts {
+    list-style-type: none;
+    padding-left: 0;
+}
+.contacts li a {
+    text-decoration: none;
+}
+
