@@ -24,3 +24,18 @@
 * Editors: VSCode
 
 ---
+## Code Example 
+[my codewars](https://www.codewars.com/users/HolyOly) 
+```
+function isIsogram(str){
+  let set = [...new Set(str.toLowerCase().split(''))];
+  return ([...str].length === set.length) ? true : false;
+}
+```
+```
+function nicknameGenerator(name){
+  return (name.length < 4) ? "Error: Name too short" : 
+  [...'aeiou'].map((item, i, arr) => {return (arr.includes(name[2])) ? name.slice(0, 4) : name.slice(0, 3)})[0];
+}
+```
+---
