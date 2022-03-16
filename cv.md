@@ -39,3 +39,6 @@ function nicknameGenerator(name){
 }
 ```
 ---
+## Languages
+* Russian
+* English A2
