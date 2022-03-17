@@ -20,7 +20,7 @@
 * PHP Basics
 * Bootsrap 5
 * PixelPerfect
-* OS: **Linux(Ubuntu 20.04)** / Windows 10
+* OS: **Linux(Ubuntu)** / Windows 10
 * Editors: VSCode
 
 
