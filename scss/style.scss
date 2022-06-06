@@ -1,0 +1,16 @@
+//abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/placeholders';
+
+//base
+@import 'base/fonts';
+@import 'base/general-styles';
+
+//components
+@import 'components/buttons';
+@import 'components/sprites';
+
+//layout
+@import 'layout/aside';
+@import 'layout/main';

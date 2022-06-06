@@ -1,0 +1,33 @@
+{
+  "liveServer.settings.CustomBrowser": "chrome",
+  "security.workspace.trust.untrustedFiles": "open",
+  "liveServer.settings.donotVerifyTags": true,
+  "git.autofetch": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+
+  "liveSassCompile.settings.generateMap": false,
+      "liveSassCompile.settings.formats": [
+          {
+              "format": "expanded",
+              //"autoprefix": "last 5 versions",
+              "extensionName": ".css",
+              "savePath": "~/.././" //"/css/" , "~/../css/", "~/.././"
+          }
+      ],
+      "terminal.integrated.defaultProfile.windows": "Git Bash",
+      "terminal.external.windowsExec": "C:\\Program Files\\Git\\git-bash.exe",
+      "explorer.confirmDragAndDrop": false,
+      "files.autoSave": "afterDelay",
+      "editor.renderWhitespace": "none",
+      "liveSassCompile.settings.autoprefix": [
+      
+      
+      ],
+      "liveSassCompile.settings.includeItems": [
+      
+      ]
+      
+}

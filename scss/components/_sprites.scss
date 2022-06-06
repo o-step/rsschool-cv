@@ -1,0 +1,14 @@
+.contacts_icon {
+  width: 40px;
+  height: 40px;
+  padding-right: 20px;
+  fill: $color-link-no-active;
+  transition: .7s;
+  &:hover {
+    fill: $color-link-active;
+  }
+}
+.section_icon {
+  width: 60px;
+  height: 60px;
+}
