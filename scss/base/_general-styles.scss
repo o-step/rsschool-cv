@@ -3,21 +3,50 @@ html {
   margin: 0 auto;
   background-color: $color-light;
   font-family: 'Montserrat', sans-serif;
+  @include media-min-tablet {
+    overflow-x: hidden;
+  }
 }
 body {
   margin: 0 auto;
   width: 100%;
+  @include media-min-tablet {
+    overflow-x: hidden;
+  }
 }
 .wrapper {
   display: flex;
   width: 1200px;
   margin: 0 auto;
+  @include media-min-laptop {
+    width: 768px;
+  }
+  @include media-min-tablet {
+    flex-direction: column;
+    width: 320px;
+  }
+  @include media-mobile {
+    flex-direction: column;
+    width: 250px;
+  }
 }
 .aside {
   width: 35%;
+  @include media-min-tablet {
+    width: 100%;
+  }
+  @include media-mobile {
+    width: 100%;
+  }
 }
 .main {
   width: 65%;
+  @include media-min-tablet {
+    width: 100%;
+  }
+  @include media-mobile {
+    width: 100%;
+  }
 }
 
 ul {
@@ -35,5 +64,43 @@ a {
   transition: .7s;
   &:hover {
     color: $color-light;
+    transform: scale(1.05);
   }
+  @include media-min-laptop {
+    @include font($size: 2rem, $weight: 300);
+  }
+  @include media-min-tablet {
+    @include font($size: 1.8rem, $weight: 300);
+  }
+  @include media-mobile {
+    @include font($size: 1.7rem, $weight: 300);
+  }
+}
+h2 {
+  display: flex;
+  align-items: center;
+}
+
+hr {
+  height: 2px;
+  background-color: $color-main-text;
+  opacity: .7;
+  margin-left: 70px;
+  margin-top: -25px;
+  @include media-min-laptop {
+    width: 80%;
+  }
+  @include media-min-tablet {
+    width: 70%;
+    margin-left: 50px;
+  }
+  @include media-mobile {
+    width: 70%;
+    margin-left: 40px;
+    margin-top: -20px;
+  }
+}
+
+p {
+  @include font($size: 1.7rem, $weight: 300);
 }
