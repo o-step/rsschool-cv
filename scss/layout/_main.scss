@@ -1,0 +1,143 @@
+.main {
+  background-color: $color-light;
+  padding-left: 20px;
+  color: $color-main-text;
+  @include media-min-tablet {
+    padding-left: 10px;
+    margin-bottom: 20px;
+  }
+  @include media-mobile {
+    padding-left: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.section__title {
+  @include font($size: 2.5rem, $weight: 700);
+  color: $color-title-blue;
+  @include media-min-tablet {
+    margin-top: 30px;
+  }
+  @include media-mobile {
+    @include font($size: 2.2rem, $weight: 700);
+    margin-top: 30px;
+  }
+}
+.about__text {
+  margin-left: 70px;
+  @include media-min-laptop {
+    width: 80%;
+  }
+  @include media-min-tablet {
+    width: 90%;
+    margin-left: 0px;
+    text-align: justify;
+  }
+  @include media-mobile {
+    width: 90%;
+    margin-left: 0px;
+    text-align: justify;
+  }
+} 
+.education__wrapper {
+  width: 100%;
+  margin-left: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  @include media-min-laptop {
+    flex-direction: column;
+    margin-left: 0px;
+    width: 90%;
+  }
+  @include media-min-tablet {
+    flex-direction: column;
+    margin-left: 0px;
+    margin: 0 auto;
+    width: 90%;
+  }
+  @include media-mobile {
+    flex-direction: column;
+    margin-left: 0px;
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+.education__university {
+  width: 50%;
+  margin-right: 50px;
+  @include media-min-laptop {
+    margin-right: 0px;
+    width: 70%;
+  }
+  @include media-min-tablet {
+    margin-right: 0px;
+    width: 90%;
+  }
+  @include media-mobile {
+    margin-right: 0px;
+    width: 90%;
+  }
+}
+
+.university_name {
+  @include font($size: 1.7rem, $weight: 600);
+}
+.ul__skills {
+  width: 40%;
+  @include media-min-laptop {
+    width: 80%;
+  }
+  @include media-min-tablet {
+    width: 85%;
+    padding-left: 10px;
+  }
+  @include media-mobile {
+    width: 85%;
+    padding-left: 10px;
+  }
+}
+
+.li__skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.li__skills,
+.li__skills-other, 
+.li__skills-lang {
+  @include font($size: 1.7rem, $weight: 500);
+  margin-bottom: 10px;
+  color: $color-main-text;
+  margin-left: 35px;
+  @include media-min-tablet {
+    margin-left: 0px;
+  }
+  @include media-mobile {
+    margin-left: 0px;
+    @include font($size: 1.6rem, $weight: 500);
+  }
+}
+
+
+.ul__other {
+  width: 50%;
+  @include media-min-laptop {
+    width: 80%;
+  }
+}
+.ul__other,
+.ul__lang {
+  @include media-mobile {
+    padding-left: 20px;
+  }
+}
+.result__other,
+.result__lang {
+  @include font($size: 1.7rem, $weight: 400);
+  margin-left: 15px;
+}

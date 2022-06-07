@@ -1,0 +1,14 @@
+//abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+//base
+@import 'base/fonts';
+@import 'base/general-styles';
+
+//components
+@import 'components/sprites';
+
+//layout
+@import 'layout/aside';
+@import 'layout/main';

@@ -1,0 +1,75 @@
+.aside {
+  background-color: $color-primary;
+  color: $color-link-no-active;
+}
+.aside__photo {
+  display: block;
+  width: 300px;
+  height: 310px;
+  margin: 5% auto 10%;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1rem solid $color-link-active;
+  box-shadow: -1px 2px 16px 1px rgba(34, 60, 80, 0.2);
+  @include media-min-laptop {
+    width: 220px;
+    height: 230px;
+    border: .5rem solid $color-link-active;
+  }
+  @include media-min-tablet {
+    width: 210px;
+    height: 220px;
+    border: .5rem solid $color-link-active;
+  }
+  @include media-mobile {
+    width: 200px;
+    height: 210px;
+    border: .5rem solid $color-link-active;
+  }
+}
+.photo__img {
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+}
+.aside__name {
+  text-align: center;
+  @include font($size: 4rem, $weight: 500);
+}
+.aside__name_first {
+  color: $color-link-active;
+  @include font($size: 4rem, $weight: 700);
+}
+.aside__name_second {
+  color: $color-text-light-normal;
+  display: block;
+  margin-top: -40px;
+}
+.aside__position {
+  text-align: center;
+  @include font($size: 2.5rem, $weight: 400);
+} 
+.aside__contacts {
+  margin-top: 60px;
+  @include media-min-laptop {
+    margin-left: -10px;
+  }
+  @include media-min-tablet {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 5px;
+  }
+  @include media-mobile {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: -10px;
+  }
+}
+.contacts_email,
+.contacts_phone,
+.contacts_tg,
+.contacts_git,
+.contacts_codewars {
+  display: flex;
+  align-items: center;
+}
