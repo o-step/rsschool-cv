@@ -28,9 +28,13 @@
   @include media-min-laptop {
     width: 80%;
   }
+  @include media-super-min-tablet {
+    width: 80%;
+    margin-left: 58px;
+  }
   @include media-min-tablet {
-    width: 90%;
-    margin-left: 0px;
+    width: 80%;
+    margin-left: 27px;
     text-align: justify;
   }
   @include media-mobile {
@@ -50,6 +54,12 @@
   @include media-min-laptop {
     flex-direction: column;
     margin-left: 0px;
+    width: 90%;
+  }
+  @include media-super-min-tablet {
+    flex-direction: column;
+    margin-left: 0px;
+    margin: 0 auto;
     width: 90%;
   }
   @include media-min-tablet {
@@ -73,6 +83,10 @@
     margin-right: 0px;
     width: 70%;
   }
+  @include media-super-min-tablet {
+    margin-right: 0px;
+    width: 90%;
+  }
   @include media-min-tablet {
     margin-right: 0px;
     width: 90%;
@@ -91,9 +105,13 @@
   @include media-min-laptop {
     width: 80%;
   }
+  @include media-super-min-tablet {
+    width: 80%;
+    padding-left: 20px;
+  }
   @include media-min-tablet {
-    width: 85%;
-    padding-left: 10px;
+    width: 78%;
+    padding-left: 25px;
   }
   @include media-mobile {
     width: 85%;
@@ -129,9 +147,15 @@
   @include media-min-laptop {
     width: 80%;
   }
+  @include media-super-min-tablet {
+    width: 80%;
+  }
 }
 .ul__other,
 .ul__lang {
+  @include media-super-min-tablet {
+    padding-left: 20px;
+  }
   @include media-mobile {
     padding-left: 20px;
   }
