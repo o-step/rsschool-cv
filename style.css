@@ -6,7 +6,13 @@ html {
   font-family: 'Montserrat', sans-serif;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 543px) {
+  html {
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 544px) and (max-width: 767px) {
   html {
     overflow-x: hidden;
   }
@@ -17,7 +23,13 @@ body {
   width: 100%;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 543px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 544px) and (max-width: 767px) {
   body {
     overflow-x: hidden;
   }
@@ -35,17 +47,24 @@ body {
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 544px) and (max-width: 767px) {
   .wrapper {
     flex-direction: column;
-    width: 320px;
+    width: 544px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 543px) {
+  .wrapper {
+    flex-direction: column;
+    width: 100%;
   }
 }
 
 @media (max-width: 319px) {
   .wrapper {
     flex-direction: column;
-    width: 250px;
+    width: 100%;
   }
 }
 
@@ -53,7 +72,13 @@ body {
   width: 35%;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 543px) {
+  .aside {
+    width: 100%;
+  }
+}
+
+@media (min-width: 544px) and (max-width: 767px) {
   .aside {
     width: 100%;
   }
@@ -69,7 +94,13 @@ body {
   width: 65%;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 543px) {
+  .main {
+    width: 100%;
+  }
+}
+
+@media (min-width: 544px) and (max-width: 767px) {
   .main {
     width: 100%;
   }
@@ -111,7 +142,15 @@ a:hover {
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 544px) and (max-width: 767px) {
+  a {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.9rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 543px) {
   a {
     font-style: normal;
     font-weight: 300;
@@ -146,7 +185,13 @@ hr {
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 544px) and (max-width: 767px) {
+  hr {
+    width: 75%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 543px) {
   hr {
     width: 70%;
     margin-left: 50px;
@@ -193,7 +238,7 @@ p {
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 543px) {
   .section_icon {
     width: 40px;
     height: 40px;
@@ -244,7 +289,15 @@ p {
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 543px) {
+  .aside__photo {
+    width: 210px;
+    height: 220px;
+    border: 0.5rem solid #fafafa;
+  }
+}
+
+@media (min-width: 544px) and (max-width: 767px) {
   .aside__photo {
     width: 210px;
     height: 220px;
@@ -303,11 +356,21 @@ p {
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 543px) {
   .aside__contacts {
     margin-top: 40px;
     margin-bottom: 40px;
     margin-left: 5px;
+  }
+}
+
+@media (min-width: 544px) and (max-width: 767px) {
+  .aside__contacts {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 290px;
+    margin-bottom: 40px;
   }
 }
 
@@ -334,7 +397,7 @@ p {
   color: #424a5f;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 543px) {
   .main {
     padding-left: 10px;
     margin-bottom: 20px;
@@ -355,7 +418,7 @@ p {
   color: #303647;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 543px) {
   .section__title {
     margin-top: 30px;
   }
@@ -380,10 +443,17 @@ p {
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 544px) and (max-width: 767px) {
   .about__text {
-    width: 90%;
-    margin-left: 0px;
+    width: 80%;
+    margin-left: 58px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 543px) {
+  .about__text {
+    width: 80%;
+    margin-left: 27px;
     text-align: justify;
   }
 }
@@ -414,7 +484,16 @@ p {
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 544px) and (max-width: 767px) {
+  .education__wrapper {
+    flex-direction: column;
+    margin-left: 0px;
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 543px) {
   .education__wrapper {
     flex-direction: column;
     margin-left: 0px;
@@ -444,7 +523,14 @@ p {
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 544px) and (max-width: 767px) {
+  .education__university {
+    margin-right: 0px;
+    width: 90%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 543px) {
   .education__university {
     margin-right: 0px;
     width: 90%;
@@ -474,10 +560,17 @@ p {
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 544px) and (max-width: 767px) {
   .ul__skills {
-    width: 85%;
-    padding-left: 10px;
+    width: 80%;
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 543px) {
+  .ul__skills {
+    width: 78%;
+    padding-left: 25px;
   }
 }
 
@@ -505,7 +598,7 @@ p {
   margin-left: 35px;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 543px) {
   .li__skills,
   .li__skills-other,
   .li__skills-lang {
@@ -531,6 +624,19 @@ p {
 @media (min-width: 768px) and (max-width: 1279px) {
   .ul__other {
     width: 80%;
+  }
+}
+
+@media (min-width: 544px) and (max-width: 767px) {
+  .ul__other {
+    width: 80%;
+  }
+}
+
+@media (min-width: 544px) and (max-width: 767px) {
+  .ul__other,
+  .ul__lang {
+    padding-left: 20px;
   }
 }
 

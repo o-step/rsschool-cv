@@ -21,6 +21,11 @@
     height: 220px;
     border: .5rem solid $color-link-active;
   }
+  @include media-super-min-tablet {
+    width: 210px;
+    height: 220px;
+    border: .5rem solid $color-link-active;
+  }
   @include media-mobile {
     width: 200px;
     height: 210px;
@@ -58,6 +63,13 @@
     margin-top: 40px;
     margin-bottom: 40px;
     margin-left: 5px;
+  }
+  @include media-super-min-tablet {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 290px;
+    margin-bottom: 40px;
   }
   @include media-mobile {
     margin-top: 40px;
