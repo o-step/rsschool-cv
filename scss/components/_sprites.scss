@@ -8,6 +8,17 @@
     fill: $color-link-active;
   }
 }
+
+.contacts__hover-icon-js {
+  fill: $color-link-active;
+}
+
+.contacts__hover-a-js {
+  color: $color-link-active;
+  transform: scale(1.05);
+}
+
+
 .section_icon {
   width: 50px;
   height: 50px;
@@ -26,6 +37,7 @@
     height: 30px;
   }
 }
+
 .star_icon {
   width: 20px;
   height: 20px;
@@ -34,4 +46,29 @@
     width: 15px;
     height: 15px;
   }
+}
+
+.icon_arrow {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  z-index: 99;
+  border: 3px solid $color-arrow;
+  fill: $color-arrow;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  transition: .7s;
+}
+
+.icon_arrow:hover {
+  border: 3px solid $color-primary;
+  fill: $color-primary;
+  transform: scale(1.05);
 }
