@@ -56,13 +56,17 @@
       </ul>
     </div>
   </aside>
-  <main class="layout main">
+  <main class="layout main" id="main">
     <section class="section aboute">
       <h2 class="section__title aboute_title">
         <svg class="section_icon">
           <use xlink:href="scss/components/sprite.svg#person"></use>
         </svg>
         ABOUT
+        <label class="switch">
+          <input id="switch" type="checkbox">
+          <span class="slider round"></span>
+        </label>
       </h2>
       <hr>
       <p class="about__text">I started learning front-end development in 2021. CSS and Javascript impressed me a lot,
@@ -279,6 +283,7 @@
     </section>
   </main>
 </div>
+<script src="./js/theme.js"></script>
 <script src="./js/scroll.js"></script>
 <script src="./js/hover.js"></script>
 </body>

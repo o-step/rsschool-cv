@@ -21,6 +21,7 @@ html {
 body {
   margin: 0 auto;
   width: 100%;
+  transition: .7s;
 }
 
 @media (min-width: 320px) and (max-width: 543px) {
@@ -39,6 +40,7 @@ body {
   display: flex;
   width: 1200px;
   margin: 0 auto;
+  transition: .7s;
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -92,6 +94,7 @@ body {
 
 .main {
   width: 65%;
+  transition: .7s;
 }
 
 @media (min-width: 320px) and (max-width: 543px) {
@@ -297,6 +300,94 @@ p {
   border: 3px solid #2e3445;
   fill: #2e3445;
   transform: scale(1.05);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  left: 70%;
+  bottom: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .switch {
+    left: 50%;
+    bottom: 5px;
+  }
+}
+
+@media (min-width: 544px) and (max-width: 767px) {
+  .switch {
+    position: absolute;
+    left: 75%;
+    top: 15px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 543px) {
+  .switch {
+    position: absolute;
+    left: 80%;
+    top: 15px;
+  }
+}
+
+@media (max-width: 319px) {
+  .switch {
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    width: 50px;
+    height: 30px;
+  }
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #424a5f;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 .aside {
@@ -687,4 +778,21 @@ p {
   font-weight: 400;
   font-size: 1.7rem;
   margin-left: 15px;
+}
+
+.change-bg-color-js {
+  background-color: #2e3445 !important;
+  transition: .7s;
+}
+
+.change-color-title-js {
+  color: #fafafa !important;
+}
+
+.change-color-text-js {
+  color: #fafafac5 !important;
+}
+
+.change-color-ico-js {
+  fill: #fafafac5 !important;
 }
