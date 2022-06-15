@@ -165,3 +165,17 @@
   @include font($size: 1.7rem, $weight: 400);
   margin-left: 15px;
 }
+
+.change-bg-color-js {
+  background-color: $color-primary !important;
+  transition: .7s;
+}
+.change-color-title-js {
+  color: $color-link-active !important;
+}
+.change-color-text-js {
+  color: $color-text-light-normal !important;
+}
+.change-color-ico-js {
+  fill: $color-text-light-normal !important;
+}

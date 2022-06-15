@@ -3,10 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Welcome to my CV">
+  <meta name="keywords" content="Resume HTML, CSS, JavaScript CV Olga Stepanova frontend development">
+  <meta name="author" content="Olga Stepanova">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Olga Stepanova</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./assets/ico/cv.ico">
 </head>
 <body>
   <div class="wrapper">
@@ -52,13 +56,17 @@
       </ul>
     </div>
   </aside>
-  <main class="layout main">
+  <main class="layout main" id="main">
     <section class="section aboute">
       <h2 class="section__title aboute_title">
         <svg class="section_icon">
           <use xlink:href="scss/components/sprite.svg#person"></use>
         </svg>
         ABOUT
+        <label class="switch">
+          <input id="switch" type="checkbox">
+          <span class="slider round"></span>
+        </label>
       </h2>
       <hr>
       <p class="about__text">I started learning front-end development in 2021. CSS and Javascript impressed me a lot,
@@ -275,6 +283,7 @@
     </section>
   </main>
 </div>
+<script src="./js/theme.js"></script>
 <script src="./js/scroll.js"></script>
 <script src="./js/hover.js"></script>
 </body>
