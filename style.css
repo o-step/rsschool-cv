@@ -71,7 +71,7 @@ body {
 }
 
 .aside {
-  width: 35%;
+  width: 40%;
 }
 
 @media (min-width: 320px) and (max-width: 543px) {
@@ -93,7 +93,7 @@ body {
 }
 
 .main {
-  width: 65%;
+  width: 60%;
   transition: .7s;
 }
 
@@ -516,6 +516,10 @@ input:checked + .slider:before {
   align-items: center;
 }
 
+.email_link {
+  font-size: 1.6rem;
+}
+
 .main {
   background-color: #FFFFFF;
   padding-left: 20px;
@@ -676,7 +680,7 @@ input:checked + .slider:before {
 }
 
 .ul__skills {
-  width: 40%;
+  width: 50%;
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -740,6 +744,10 @@ input:checked + .slider:before {
     font-weight: 500;
     font-size: 1.6rem;
   }
+}
+
+.skills__stars {
+  width: 140px;
 }
 
 .ul__other {

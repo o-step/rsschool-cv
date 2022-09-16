@@ -101,7 +101,7 @@
   @include font($size: 1.7rem, $weight: 600);
 }
 .ul__skills {
-  width: 40%;
+  width: 50%;
   @include media-min-laptop {
     width: 80%;
   }
@@ -141,6 +141,9 @@
   }
 }
 
+.skills__stars {
+  width: 140px;
+}
 
 .ul__other {
   width: 50%;
