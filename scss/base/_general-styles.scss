@@ -3,6 +3,7 @@ html {
   margin: 0 auto;
   background-color: $color-light;
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
   @include media-min-tablet {
     overflow-x: hidden;
   }
