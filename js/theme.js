@@ -2,6 +2,7 @@ let tumbler = document.getElementById('switch');
 let main = document.getElementById('main');
 let textTitle = document.getElementsByClassName('section__title');
 let aboutP = document.getElementsByClassName('about__text')[0];
+let experience =  document.getElementsByClassName('experience__wrapper')[0];
 let university =  document.getElementsByClassName('education__wrapper')[0];
 let skills = document.getElementsByClassName('li__skills');
 let other = document.getElementsByClassName('li__skills-other');
@@ -40,6 +41,7 @@ function changeTheme() {
   }
 
   aboutP.classList.toggle('change-color-text-js');
+  experience.classList.toggle('change-color-text-js');
   university.classList.toggle('change-color-text-js');
 
   for (let i = 0; i < skills.length; i++) {

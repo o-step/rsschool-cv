@@ -43,7 +43,8 @@
     text-align: justify;
   }
 } 
-.education__wrapper {
+.education__wrapper,
+.experience__wrapper {
   width: 100%;
   margin-left: 70px;
   display: flex;
@@ -76,7 +77,8 @@
   }
 }
 
-.education__university {
+.education__university,
+.experience__company {
   width: 50%;
   margin-right: 50px;
   @include media-min-laptop {
@@ -97,7 +99,8 @@
   }
 }
 
-.university_name {
+.university_name,
+.company_name {
   @include font($size: 1.7rem, $weight: 600);
 }
 .ul__skills {

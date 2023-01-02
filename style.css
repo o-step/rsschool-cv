@@ -548,7 +548,8 @@ input:checked + .slider:before {
   }
 }
 
-.education__wrapper {
+.education__wrapper,
+.experience__wrapper {
   width: 100%;
   margin-left: 70px;
   display: flex;
@@ -558,14 +559,16 @@ input:checked + .slider:before {
   flex-wrap: wrap;
 }
 @media (min-width: 768px) and (max-width: 1279px) {
-  .education__wrapper {
+  .education__wrapper,
+.experience__wrapper {
     flex-direction: column;
     margin-left: 0px;
     width: 90%;
   }
 }
 @media (min-width: 544px) and (max-width: 767px) {
-  .education__wrapper {
+  .education__wrapper,
+.experience__wrapper {
     flex-direction: column;
     margin-left: 0px;
     margin: 0 auto;
@@ -573,7 +576,8 @@ input:checked + .slider:before {
   }
 }
 @media (min-width: 320px) and (max-width: 543px) {
-  .education__wrapper {
+  .education__wrapper,
+.experience__wrapper {
     flex-direction: column;
     margin-left: 0px;
     margin: 0 auto;
@@ -581,7 +585,8 @@ input:checked + .slider:before {
   }
 }
 @media (max-width: 319px) {
-  .education__wrapper {
+  .education__wrapper,
+.experience__wrapper {
     flex-direction: column;
     margin-left: 0px;
     margin: 0 auto;
@@ -589,36 +594,42 @@ input:checked + .slider:before {
   }
 }
 
-.education__university {
+.education__university,
+.experience__company {
   width: 50%;
   margin-right: 50px;
 }
 @media (min-width: 768px) and (max-width: 1279px) {
-  .education__university {
+  .education__university,
+.experience__company {
     margin-right: 0px;
     width: 70%;
   }
 }
 @media (min-width: 544px) and (max-width: 767px) {
-  .education__university {
+  .education__university,
+.experience__company {
     margin-right: 0px;
     width: 90%;
   }
 }
 @media (min-width: 320px) and (max-width: 543px) {
-  .education__university {
+  .education__university,
+.experience__company {
     margin-right: 0px;
     width: 90%;
   }
 }
 @media (max-width: 319px) {
-  .education__university {
+  .education__university,
+.experience__company {
     margin-right: 0px;
     width: 90%;
   }
 }
 
-.university_name {
+.university_name,
+.company_name {
   font-style: normal;
   font-weight: 600;
   font-size: 1.7rem;
