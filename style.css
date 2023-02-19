@@ -560,7 +560,7 @@ input:checked + .slider:before {
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .education__wrapper,
-.experience__wrapper {
+  .experience__wrapper {
     flex-direction: column;
     margin-left: 0px;
     width: 90%;
@@ -568,7 +568,7 @@ input:checked + .slider:before {
 }
 @media (min-width: 544px) and (max-width: 767px) {
   .education__wrapper,
-.experience__wrapper {
+  .experience__wrapper {
     flex-direction: column;
     margin-left: 0px;
     margin: 0 auto;
@@ -577,7 +577,7 @@ input:checked + .slider:before {
 }
 @media (min-width: 320px) and (max-width: 543px) {
   .education__wrapper,
-.experience__wrapper {
+  .experience__wrapper {
     flex-direction: column;
     margin-left: 0px;
     margin: 0 auto;
@@ -586,7 +586,7 @@ input:checked + .slider:before {
 }
 @media (max-width: 319px) {
   .education__wrapper,
-.experience__wrapper {
+  .experience__wrapper {
     flex-direction: column;
     margin-left: 0px;
     margin: 0 auto;
@@ -601,28 +601,28 @@ input:checked + .slider:before {
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .education__university,
-.experience__company {
+  .experience__company {
     margin-right: 0px;
     width: 70%;
   }
 }
 @media (min-width: 544px) and (max-width: 767px) {
   .education__university,
-.experience__company {
+  .experience__company {
     margin-right: 0px;
     width: 90%;
   }
 }
 @media (min-width: 320px) and (max-width: 543px) {
   .education__university,
-.experience__company {
+  .experience__company {
     margin-right: 0px;
     width: 90%;
   }
 }
 @media (max-width: 319px) {
   .education__university,
-.experience__company {
+  .experience__company {
     margin-right: 0px;
     width: 90%;
   }
@@ -662,6 +662,42 @@ input:checked + .slider:before {
   }
 }
 
+.skills-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 35px;
+  margin-top: 20px;
+  gap: 10px;
+}
+@media (min-width: 544px) and (max-width: 767px) {
+  .skills-list {
+    padding-left: 20px;
+  }
+}
+@media (min-width: 320px) and (max-width: 543px) {
+  .skills-list {
+    padding-left: 25px;
+  }
+}
+@media (max-width: 319px) {
+  .skills-list {
+    padding-left: 10px;
+  }
+}
+
+.list-colomn {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.text__skills {
+  border: 1px solid rgba(66, 74, 95, 0.4470588235);
+  border-radius: 5px;
+  padding: 3px 7px;
+}
+
 .li__skills {
   display: flex;
   align-items: center;
@@ -669,8 +705,7 @@ input:checked + .slider:before {
 }
 
 .li__skills,
-.li__skills-other,
-.li__skills-lang {
+.skill__item {
   font-style: normal;
   font-weight: 500;
   font-size: 1.7rem;
@@ -680,15 +715,13 @@ input:checked + .slider:before {
 }
 @media (min-width: 320px) and (max-width: 543px) {
   .li__skills,
-.li__skills-other,
-.li__skills-lang {
+  .skill__item {
     margin-left: 0px;
   }
 }
 @media (max-width: 319px) {
   .li__skills,
-.li__skills-other,
-.li__skills-lang {
+  .skill__item {
     margin-left: 0px;
     font-style: normal;
     font-weight: 500;
@@ -696,33 +729,63 @@ input:checked + .slider:before {
   }
 }
 
+.li__skills-other,
+.li__skills-lang {
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  color: #424a5f;
+  margin-left: 35px;
+}
+@media (min-width: 320px) and (max-width: 543px) {
+  .li__skills-other,
+  .li__skills-lang {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 319px) {
+  .li__skills-other,
+  .li__skills-lang {
+    margin-left: 0px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+  }
+}
+
+.li__skills-other {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.skill-os,
+.skill-editor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .skills__stars {
   width: 140px;
 }
 
 .ul__other {
-  width: 50%;
-}
-@media (min-width: 768px) and (max-width: 1279px) {
-  .ul__other {
-    width: 80%;
-  }
-}
-@media (min-width: 544px) and (max-width: 767px) {
-  .ul__other {
-    width: 80%;
-  }
+  width: 80%;
 }
 
 @media (min-width: 544px) and (max-width: 767px) {
   .ul__other,
-.ul__lang {
+  .ul__lang {
     padding-left: 20px;
   }
 }
 @media (max-width: 319px) {
   .ul__other,
-.ul__lang {
+  .ul__lang {
     padding-left: 20px;
   }
 }

@@ -5,6 +5,7 @@ let aboutP = document.getElementsByClassName('about__text')[0];
 let experience =  document.getElementsByClassName('experience__wrapper')[0];
 let university =  document.getElementsByClassName('education__wrapper')[0];
 let skills = document.getElementsByClassName('li__skills');
+let skills_v2 = document.getElementsByClassName('skill__item');
 let other = document.getElementsByClassName('li__skills-other');
 let lang = document.getElementsByClassName('li__skills-lang');
 let secIco = document.getElementsByClassName('section_icon');
@@ -46,6 +47,10 @@ function changeTheme() {
 
   for (let i = 0; i < skills.length; i++) {
     skills[i].classList.toggle('change-color-text-js');
+  }
+
+  for (let i = 0; i < skills_v2.length; i++) {
+    skills_v2[i].classList.toggle('change-color-text-js');
   }
 
   for (let i = 0; i < other.length; i++) {
