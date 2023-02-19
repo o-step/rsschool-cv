@@ -3,6 +3,7 @@ html {
   margin: 0 auto;
   background-color: $color-light;
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
   @include media-min-tablet {
     overflow-x: hidden;
   }
@@ -43,7 +44,7 @@ body {
   }
 }
 .aside {
-  width: 35%;
+  width: 40%;
   @include media-min-tablet {
     width: 100%;
   }
@@ -55,7 +56,7 @@ body {
   }
 }
 .main {
-  width: 65%;
+  width: 60%;
   transition: .7s;
   @include media-min-tablet {
     width: 100%;
